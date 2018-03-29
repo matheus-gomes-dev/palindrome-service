@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="palindromeApp">
+	<head>
+		<title>Palindrome Service</title>
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/main.css" rel="stylesheet">
+		
+	</head>
+
+	<body ng-controller='homeController'>
+		<div class="container home">
+			<div class="text-center">
+				<h1>Palindrome service</h1>
+				<br>
+				<img width="200" height="200" src="./img/arara.jpg">
+				<form ng-submit="isPalindrome()">
+					<input type="text" class="form-control" placeholder="Input your sentence..." required ng-model="userInput">
+					<br>
+					<button class="btn btn-primary" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="./js/components/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/components/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/components/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/components/angular.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/controllers/home.controller.js"></script>
+
+</html>
