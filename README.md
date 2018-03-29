@@ -1,6 +1,7 @@
 # Palindrome Service
 
 Simple node app service to define if a sentence is a palindrome
+![Alt Text](https://media.giphy.com/media/9P8T1zy4OJ864HoCCR/giphy.gif)
 
 # Installation
 
