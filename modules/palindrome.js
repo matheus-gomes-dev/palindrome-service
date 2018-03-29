@@ -1,6 +1,7 @@
 const palindrome = sentence => {
-	let reversedSentence = sentence.split("").reverse().join("");
-	return (reversedSentence === sentence) ? true : false
+	let sentenceAux = sentence.toUpperCase()
+	let reversedSentence = sentence.split("").reverse().join("").toUpperCase();
+	return (reversedSentence === sentenceAux) ? true : false
 }
 
 module.exports = palindrome

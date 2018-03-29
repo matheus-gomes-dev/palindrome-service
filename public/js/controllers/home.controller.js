@@ -8,12 +8,13 @@ myApp.controller('homeController', ($scope, $http, toastr) => {
 		console.log($scope.userInput);
 		$http.get(`${API_URL}/palindrome?sentence=${$scope.userInput}`)
 			.then(response => {
-				console.log(response.data)
 				toastr.success($scope.userInput, response.data)
 			})
 			.catch(error => {
-				console.log(error.data)
-				toastr.warning($scope.userInput, error.data)
+				if(error.status==400)
+					toastr.warning($scope.userInput, error.data)
+				else
+					toastr.error("Server error")
 			})
 	}
 })
