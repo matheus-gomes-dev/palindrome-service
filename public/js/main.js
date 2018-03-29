@@ -1,1 +1,1 @@
-var myApp = angular.module('palindromeApp', []);
+var myApp = angular.module('palindromeApp', ['toastr']);
