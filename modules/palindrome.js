@@ -1,6 +1,8 @@
 const palindrome = sentence => {
 	let sentenceAux = sentence.toUpperCase()
-	let reversedSentence = sentence.split("").reverse().join("").toUpperCase();
+	sentenceAux = sentenceAux.replace(/ /g, ''); //handle spaces
+	sentenceAux = sentenceAux.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''); //handle special chars
+	let reversedSentence = sentenceAux.split("").reverse().join("");
 	return (reversedSentence === sentenceAux) ? true : false
 }
 
